@@ -41,6 +41,42 @@ struct TweetRowView: View {
                     
                 }
             }
+                //Actions buttons
+            
+                HStack {
+                    Button {
+                        // action go here
+                    } label: {
+                        Image(systemName: "bubble.left")
+                            .font(.subheadline)
+                    }
+                    
+                    Spacer()
+                    Button {
+                        // action go here
+                    } label: {
+                        Image(systemName: "arrow.2.squarepath")
+                            .font(.subheadline)
+                    }
+                    
+                    Spacer()
+                    Button {
+                        // action go here
+                    } label: {
+                        Image(systemName: "heart")
+                            .font(.subheadline)
+                    }
+                    
+                    Spacer()
+                    Button {
+                        // action go here
+                    } label: {
+                        Image(systemName: "bookmark")
+                            .font(.subheadline)
+                    }
+                    
+                
+                }
         }
     }
 }
