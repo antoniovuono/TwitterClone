@@ -12,6 +12,8 @@ struct ProfileView: View {
         VStack {
             headerView
             
+            actionButtons
+            
             Spacer()
         }
     }
@@ -47,5 +49,28 @@ extension ProfileView {
             }
         }
         .frame(height: 96)
+    }
+    
+    
+    var actionButtons: some View {
+        HStack(spacing: 12) {
+            Spacer()
+            
+            Image(systemName: "bell.badge")
+                .font(.title3)
+                .padding(16)
+                .overlay(Circle().stroke(Color.gray, lineWidth: 0.75))
+            
+            Button {
+                //action
+            } label: {
+              Text("Edit profile")
+                    .font(.subheadline).bold()
+                    .frame(width: 120, height: 32)
+                    .foregroundColor(Color.black)
+                    .overlay(RoundedRectangle(cornerRadius: 20).stroke(Color.gray, lineWidth: 0.75))
+            }
+        }
+        .padding(.trailing)
     }
 }
