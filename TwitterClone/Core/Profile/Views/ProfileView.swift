@@ -9,10 +9,14 @@ import SwiftUI
 
 struct ProfileView: View {
     var body: some View {
-        VStack {
+        VStack(alignment: .leading) {
             headerView
             
             actionButtons
+            
+            userInfoDetails
+        
+            .padding(.horizontal)
             
             Spacer()
         }
@@ -72,5 +76,62 @@ extension ProfileView {
             }
         }
         .padding(.trailing)
+    }
+    
+    
+    var userInfoDetails: some View {
+        VStack(alignment: .leading, spacing: 4) {
+            HStack {
+                Text("Antonio Vuono")
+                    .font(.title2).bold()
+                
+                Image(systemName: "checkmark.seal.fill")
+                    .foregroundColor(Color(.systemBlue))
+            }
+            
+            Text("@antoniosvuono")
+                .font(.subheadline)
+                .foregroundColor(.gray)
+            
+            Text("Mobile IOS Developer")
+                .font(.subheadline)
+                .padding(.vertical)
+            
+            
+            HStack(spacing: 24) {
+                HStack {
+                    Image(systemName: "mappin.and.ellipse")
+                    Text("Gothan, Ny")
+                }
+                
+                HStack {
+                    Image(systemName: "link")
+                    Text("www.asvmob.com")
+                }
+            }
+            .font(.caption)
+            .foregroundColor(.gray)
+            
+            
+            HStack(spacing: 24) {
+                HStack(spacing: 4) {
+                    Text("765").bold()
+                    Text("Following")
+                        .font(.subheadline)
+                        .bold()
+                        .foregroundColor(.gray)
+                }
+                
+                HStack(spacing: 4) {
+                    Text("6.5M").bold()
+                    Text("Followers")
+                        .font(.subheadline)
+                        .bold()
+                        .foregroundColor(.gray)
+                }
+            }
+            .padding(.vertical)
+     
+        }
     }
 }
