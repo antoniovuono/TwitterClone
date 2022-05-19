@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TweetRowView: View {
     var body: some View {
-        VStack {
+        VStack(alignment: .leading) {
             
             // profile image + user info + tweet
             HStack(alignment: .top, spacing: 20) {
@@ -75,9 +75,13 @@ struct TweetRowView: View {
                             .font(.subheadline)
                     }
                     
-                
                 }
+                .padding()
+                .foregroundColor(.gray)
+            
+                Divider()
         }
+
     }
 }
 
