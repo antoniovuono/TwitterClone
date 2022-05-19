@@ -13,6 +13,10 @@
 		E7AF60EB28359ED1008FA495 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7AF60EA28359ED1008FA495 /* Preview Assets.xcassets */; };
 		E7AF60FC2835A0C6008FA495 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AF60FB2835A0C6008FA495 /* FeedView.swift */; };
 		E7AF60FF2835A1FA008FA495 /* TweetRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AF60FE2835A1FA008FA495 /* TweetRowView.swift */; };
+		E7AF61032835C9AD008FA495 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AF61022835C9AD008FA495 /* MainTabView.swift */; };
+		E7AF61092835CC0B008FA495 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AF61082835CC0B008FA495 /* ExploreView.swift */; };
+		E7AF610B2835CC64008FA495 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AF610A2835CC64008FA495 /* NotificationsView.swift */; };
+		E7AF610D2835CC7D008FA495 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AF610C2835CC7D008FA495 /* MessageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +27,10 @@
 		E7AF60EA28359ED1008FA495 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E7AF60FB2835A0C6008FA495 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		E7AF60FE2835A1FA008FA495 /* TweetRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetRowView.swift; sourceTree = "<group>"; };
+		E7AF61022835C9AD008FA495 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		E7AF61082835CC0B008FA495 /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
+		E7AF610A2835CC64008FA495 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
+		E7AF610C2835CC7D008FA495 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +86,13 @@
 		E7AF60F128359EEC008FA495 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				E7AF60F828359F93008FA495 /* Feed */,
 				E7AF60F728359F88008FA495 /* Components */,
+				E7AF60F828359F93008FA495 /* Feed */,
+				E7AF61072835CBEA008FA495 /* Profile */,
+				E7AF61042835CB62008FA495 /* Explore */,
+				E7AF61052835CB6C008FA495 /* Notifications */,
+				E7AF61062835CB74008FA495 /* Messages */,
+				E7AF61012835C999008FA495 /* MainTab */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -143,6 +156,45 @@
 				E7AF60FE2835A1FA008FA495 /* TweetRowView.swift */,
 			);
 			path = Tweets;
+			sourceTree = "<group>";
+		};
+		E7AF61012835C999008FA495 /* MainTab */ = {
+			isa = PBXGroup;
+			children = (
+				E7AF61022835C9AD008FA495 /* MainTabView.swift */,
+			);
+			path = MainTab;
+			sourceTree = "<group>";
+		};
+		E7AF61042835CB62008FA495 /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				E7AF61082835CC0B008FA495 /* ExploreView.swift */,
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
+		E7AF61052835CB6C008FA495 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				E7AF610A2835CC64008FA495 /* NotificationsView.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		E7AF61062835CB74008FA495 /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				E7AF610C2835CC7D008FA495 /* MessageView.swift */,
+			);
+			path = Messages;
+			sourceTree = "<group>";
+		};
+		E7AF61072835CBEA008FA495 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +271,10 @@
 				E7AF60FF2835A1FA008FA495 /* TweetRowView.swift in Sources */,
 				E7AF60FC2835A0C6008FA495 /* FeedView.swift in Sources */,
 				E7AF60E428359ED0008FA495 /* TwitterCloneApp.swift in Sources */,
+				E7AF610D2835CC7D008FA495 /* MessageView.swift in Sources */,
+				E7AF61092835CC0B008FA495 /* ExploreView.swift in Sources */,
+				E7AF61032835C9AD008FA495 /* MainTabView.swift in Sources */,
+				E7AF610B2835CC64008FA495 /* NotificationsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
